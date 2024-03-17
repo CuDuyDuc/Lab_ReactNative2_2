@@ -11,6 +11,7 @@ const COLORS = {
     primaryGreyHex: '#252A32',
     primaryBlackHex: '#0C0F14',
     DARK_BLUE: '#00008B',
+    HEX_GREEN: '#009900'
 }
 
 export default COLORS;

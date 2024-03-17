@@ -46,5 +46,9 @@ export const gobalStyles = StyleSheet.create({
     desciptionText:{
         color:COLORS.HEX_BLACK,
         fontFamily:FONTFAMILY.poppins_bold
+    },
+    box_100:{
+        width:100,
+        height:100,
     }
 })
