@@ -8,16 +8,16 @@ interface Props {
   title?: string;
   children: ReactNode;
   back?: boolean; 
-  style?: StyleProp<ViewStyle> 
+  styles?: StyleProp<ViewStyle> 
 }
 const ContainerComponent = (props: Props) => {
 
-  const { isImageBackground, isScroll, title, children, back,style } = props;
+  const { isImageBackground, isScroll, title, children, back,styles } = props;
 
   const returnContainer = isScroll ? <ScrollView>{children}</ScrollView> : <View>{children}</View>;
   return isImageBackground ? (<ImageBackground>{returnContainer}</ImageBackground>) : (
     <SafeAreaView style = {[gobalStyles.container]}>
-      <View style={style}>
+      <View style={styles}>
         {returnContainer}
       </View>
     </SafeAreaView>
