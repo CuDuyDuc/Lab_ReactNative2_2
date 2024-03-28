@@ -8,6 +8,9 @@ import Bai2_Lab3 from './Lab3/Bai2_Lab3';
 import Bai3_Lab3 from './Lab3/Bai3_Lab3';
 import Bai1_2_Lab4 from './Lab4/Bai1_2_Lab4';
 import TrackPlayerApp from './Lab4/Bai3_Lab4';
+import CounterScreen from './Lab6/CounterScreen';
+import FormScreen from './Lab6/FormScreen';
+import ReducersQuery from './Lab6/ReducersQuery';
 export {
     Bai1_Lab1,
     Bai2_Lab1,
@@ -18,4 +21,7 @@ export {
     Bai3_Lab3,
     Bai1_2_Lab4,
     TrackPlayerApp,
+    CounterScreen,
+    ReducersQuery,
+    FormScreen,
 };

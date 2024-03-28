@@ -40,7 +40,7 @@ const Bai1_2_Lab4 = () => {
         <ContainerComponent>
             <SectionComponent>
                 <RowComponent justify='center'>
-                <Image style={{ width: 200, height: 200 ,borderRadius:100, margin: 30}} source={{ uri: selectImage || 'https://st.quantrimang.com/photos/image/2020/02/22/avatar-den-co-don-9.png' }} />
+                <Image style={{ width: 200, height: 200 ,borderRadius:100, margin: 30}} source={{ uri: selectImage || 'https://cdn.sforum.vn/sforum/wp-content/uploads/2023/10/avatar-trang-4.jpg' }} />
                 </RowComponent>
             </SectionComponent>
             <SectionComponent>
