@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Image, View } from 'react-native';
 import { SectionComponent } from '.';
-import { gobalStyles } from './../styles/gobalStyles';
+import { gobalStyles } from '../styles/gobalStyles';
 import TextComponent from './TextComponent';
 interface Props{
     title_1?:string;

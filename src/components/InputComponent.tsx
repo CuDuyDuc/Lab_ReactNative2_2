@@ -8,11 +8,11 @@ interface Props{
     onChange:(val:string)=>void,
     affix?:ReactNode,
     placeholder?:string,
-    
+    isPassword?: boolean
 
 }
 const InputComponent = (props: Props) => {
-  const { value, onChange, affix, placeholder } = props;
+  const { value, onChange, affix, placeholder , isPassword} = props;
   const [isEmpty, setIsEmpty] = useState<boolean>(false); 
 
   const handleFocus = () => {
@@ -32,6 +32,7 @@ const handleChange = (val: string) => {
         onChangeText={handleChange}
         placeholder={placeholder??''}
         onEndEditing={handleFocus}
+        secureTextEntry= {isPassword}
        />
        {isEmpty?(<ShieldCross size="32" color="#FF8A65"/>):undefined}
     </View>

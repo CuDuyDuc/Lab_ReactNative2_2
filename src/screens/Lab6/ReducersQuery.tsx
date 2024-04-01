@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ActivityIndicator, Image } from 'react-native';
+import { ActivityIndicator, Image, Text } from 'react-native';
 import { FONTFAMILY } from '../../../assets/fonts';
 import COLORS from '../../assets/colors/Colors';
 import { ButtonComponent, ContainerComponent, InputComponent, RowComponent, SectionComponent, TextComponent } from '../../components';
@@ -18,6 +18,8 @@ const ReducersQuery = () => {
             try {
                 const result = await getPokemonByName(namePokemon);
                 setPokemonData(result.data);
+                console.log(result.data);
+                
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -50,6 +52,8 @@ const ReducersQuery = () => {
                                 }}
                                 source={{ uri: pokemonData.sprites.front_shiny }}
                             />
+                            <TextComponent text={JSON.stringify(pokemonData.abilities)} size={10} color={COLORS.HEX_LIGHT_GREY}/>
+                      
                         </SectionComponent>
                     )}
                 </>

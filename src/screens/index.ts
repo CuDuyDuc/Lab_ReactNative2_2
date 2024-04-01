@@ -11,6 +11,9 @@ import TrackPlayerApp from './Lab4/Bai3_Lab4';
 import CounterScreen from './Lab6/CounterScreen';
 import FormScreen from './Lab6/FormScreen';
 import ReducersQuery from './Lab6/ReducersQuery';
+import AuthScreen from './Lab7/AuthScreen';
+import MainScreen from './Lab7/MainScreen';
+import NotificationScreen from './Lab8/NotificationScreen';
 export {
     Bai1_Lab1,
     Bai2_Lab1,
@@ -24,4 +27,7 @@ export {
     CounterScreen,
     ReducersQuery,
     FormScreen,
+    AuthScreen,
+    MainScreen,
+    NotificationScreen
 };
